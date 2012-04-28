@@ -169,11 +169,8 @@ function renderMap() {
 	for (x=0;x<=w;x++) {
 		for (y=0;y<=h;y++) {
 			tile = map[x][y];
-			if (tile != -1) { 
-					c.drawImage(document.images[tile],x*16+(rand(24)-16),y*16+(rand(24)-16),rand(4),rand(4));
-					c.drawImage(document.images[tile],x*16+(rand(24)-16),y*16+(rand(24)-16),rand(4),rand(4));
-					c.drawImage(document.images[tile],x*16+(rand(24)-16),y*16+(rand(24)-16),rand(4),rand(4));
-					c.drawImage(document.images[tile],x*16+(rand(24)-16),y*16+(rand(24)-16),rand(4),rand(4));
+			if (tile != -1) {
+				for (k=0;k<=4;k++)
 					c.drawImage(document.images[tile],x*16+(rand(24)-16),y*16+(rand(24)-16),rand(4),rand(4));
 			}
 		}
